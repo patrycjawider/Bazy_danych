@@ -1,0 +1,20 @@
+zamówienia
+
+id_produktu -> nazwa_produktu, cena_produktu, VAT
+nazwa_produktu -> cena_produktu, ilość
+id_klienta -> nazwa_klienta
+VAT -> nazwa_produktu
+
+
+
+
+klucze kandydujące:id_produktu, id_klienta
+
+
+pomieszczenia
+
+id_pomieszczenia -> numer_pomieszczenia, id_budynku, powierzchnia, liczba_okien, liczba_drzwi, ulica, miasto, kod_pocztowy
+kod_pocztowy -> miasto
+id_budynku -> ulica, miasto, kod_pocztowy
+
+klucze kandydujące: id_pomieszczenia + id_budynku; id_pomieszczenia
